@@ -1,4 +1,4 @@
-package com.michau.quiz_app.qiuz
+package com.michau.quiz_app.quiz
 
 import java.io.Serializable
 
