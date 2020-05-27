@@ -26,7 +26,7 @@ class QuizChooserFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
 
         setUpRecyclerView()
-        setUpCommunication()
+//        setUpCommunication()
 
     }
 
@@ -34,6 +34,10 @@ class QuizChooserFragment : Fragment() {
         quest_item_list.layoutManager = GridLayoutManager(context, COLUMN_COUNT)
         quest_item_list.adapter = QuizItemRecyclerViewAdapter(quizList)
 
+    }
+
+    interface OnStartQuizListener {
+        fun onStartQuizSelected(quiz: QuizItem, string: String)
     }
 
     companion object {
